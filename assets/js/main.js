@@ -11,13 +11,13 @@ var secondName = mySecondName.charAt(0).toUpperCase() + mySecondName.slice(1);
 array.push(secondName);
 console.log(array);
 
-//variabili che servono all'interno del for per il corretto unzionamento
+//variabili che servono all'interno del for per il corretto funzionamento
 var x = 0
 var temp = ""
 
 //for che inizia i ciclo per quanto l'arrey è lungo
 for (let i = 0; i < array.length; i++) {
-	//while che controlla se il cognome precedente è "maggiore" di quello attuale, nel caso la condizione sia vera entra nel for
+	//while che controlla se il cognome precedente è "maggiore" di quello attuale, nel caso la condizione sia vera entra nel while
 	while(array[i-x]<array[i-x-1]){
 		//uso la variabile temporanea(temp) per conservare il dato che poi andro a sostituire nel arrey
 		temp = array[i-x-1]
